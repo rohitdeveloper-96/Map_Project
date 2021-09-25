@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import Map from '../screen/Map'
-import Register from "../screen/Register"
-import ViewLocation from "../screen/ViewLocation"
-
+import Login from "../screen/Login"
 const Navigation = createStackNavigator({
-    Map: { screen: Map },
-    Register: { screen: Register },
-    ViewLocation: { screen: ViewLocation },
+    Login : {screen : Login},
 },
     {
         headerMode: 'none',
-        initialRouteName: 'Register'
+        initialRouteName: 'Login'
     }
 )
 const Appcontainer = createAppContainer(Navigation)
